@@ -38,16 +38,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
 }
