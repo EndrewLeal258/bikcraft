@@ -12,6 +12,7 @@
   --font-2-s: 400 1rem/1.5 "Roboto", sans-serif;
   --font-2-xs: 400 0.875rem/1.43 "Roboto", sans-serif;
   --font-1-xs: 400 0.75rem/1.35 "Poppins", sans-serif;
+  --font-dep: 900 2.25rem/1.35 "Merriweather", serif;
 }
 
 .font-1-xxl {
@@ -68,6 +69,10 @@
   font: var(--font-1-xs);
 }
 
+.font-dep {
+  font: var(--font-dep);
+}
+
 @media (width <= 1200px) {
   .font-1-xxl {
     font-size: 3rem;
@@ -86,7 +91,8 @@
     font-size: 2rem;
   }
 
-  .font-1-xl {
+  .font-1-xl,
+  .font-dep {
     font-size: 1.5rem;
   }
 

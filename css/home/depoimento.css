@@ -1,0 +1,57 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.depoimento img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.depoimento-conteudo {
+  display: grid;
+  align-content: end;
+  background: var(--p-01);
+  padding: 80px;
+}
+
+.depoimento-conteudo p {
+  position: relative;
+  max-width: 22ch;
+  margin-bottom: 32px;
+}
+
+.depoimento-conteudo p::before,
+.depoimento-conteudo p::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 35px;
+}
+
+.depoimento-conteudo p::before {
+  top: -15px;
+  left: -40px;
+  background: url("../../img/dec/aspa-abertura.svg") no-repeat center;
+}
+
+.depoimento-conteudo p::after {
+  bottom: -10px;
+  background: url("../../img/dec/aspa-fechamento.svg") no-repeat center;
+}
+
+@media (width <= 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimento-conteudo {
+    display: grid;
+    place-items: center;
+    padding: 60px;
+  }
+}
