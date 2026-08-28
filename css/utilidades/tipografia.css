@@ -18,8 +18,14 @@
   font: var(--font-1-xxl);
 }
 
-.font-1-xl {
+.font-1-xl,
+.font-1-xl-b {
   font: var(--font-1-xl);
+}
+
+.font-1-xl-b {
+  text-transform: uppercase;
+  letter-spacing: 1.5%;
 }
 
 .font-1-l {
@@ -86,7 +92,8 @@
     font-size: 2rem;
   }
 
-  .font-1-xl {
+  .font-1-xl,
+  .font-1-xl-b {
     font-size: 1.5rem;
   }
 
