@@ -1,0 +1,60 @@
+.footer-bg {
+  background: var(--c-12);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 4fr 5fr;
+  gap: 80px 40px;
+  padding-top: 60px;
+  padding-bottom: 32px;
+}
+
+.footer h2 {
+  margin-bottom: 32px;
+}
+
+.footer-contato li {
+  padding-bottom: 16px;
+}
+
+.footer-contato li:nth-child(3) {
+  border-top: 2px solid var(--c-11);
+  padding-top: 16px;
+}
+
+.footer-contato li:last-child {
+  border-bottom: 2px solid var(--c-11);
+}
+
+.footer-contato div {
+  display: flex;
+  gap: 32px;
+  padding-top: 16px;
+}
+
+.footer-informacoes a {
+  display: inline-block;
+  padding: 6px 0;
+  margin-bottom: 6px;
+  transition: all 0.2s ease;
+}
+
+.footer-informacoes a:hover {
+  color: var(--c-07);
+}
+
+.footer-informacoes a:last-child {
+  margin-bottom: 0;
+}
+
+.footer p {
+  grid-column: 1 / -1;
+}
+
+@media (width <= 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
