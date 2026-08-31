@@ -1,0 +1,27 @@
+.termos {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.termos h2 {
+  margin-bottom: 20px;
+}
+
+.termos div {
+  margin-bottom: 48px;
+}
+
+.termos div:last-child {
+  margin-bottom: 0;
+}
+
+.termos li + li {
+  margin-top: 32px;
+}
+
+@media (width <= 800px) {
+  .termos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

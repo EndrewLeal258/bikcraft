@@ -1,0 +1,13 @@
+.titulo-bg {
+  background: var(--c-11);
+}
+
+.titulo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.titulo span {
+  display: inline-block;
+  margin-bottom: 8px;
+}
