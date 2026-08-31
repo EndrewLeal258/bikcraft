@@ -4,7 +4,7 @@
 
 .footer {
   display: grid;
-  grid-template-columns: 3fr 4fr 5fr;
+  grid-template-columns: 3fr 5fr 4fr;
   gap: 80px 40px;
   padding-top: 60px;
   padding-bottom: 32px;
@@ -14,37 +14,33 @@
   margin-bottom: 32px;
 }
 
-.footer-contato li {
-  padding-bottom: 16px;
+.footer li {
+  margin-bottom: 16px;
 }
 
-.footer-contato li:nth-child(3) {
-  border-top: 2px solid var(--c-11);
-  padding-top: 16px;
+.footer-contato ul {
+  margin-bottom: 32px;
 }
 
-.footer-contato li:last-child {
-  border-bottom: 2px solid var(--c-11);
+.footer-contato li:nth-child(even)::after {
+  display: block;
+  content: "";
+  max-width: 360px;
+  height: 2px;
+  background: var(--c-11);
+  margin-top: 16px;
 }
 
 .footer-contato div {
   display: flex;
   gap: 32px;
-  padding-top: 16px;
 }
 
-.footer-informacoes a {
-  display: inline-block;
-  padding: 6px 0;
-  margin-bottom: 6px;
-  transition: all 0.2s ease;
+.footer a:hover {
+  color: var(--c-00);
 }
 
-.footer-informacoes a:hover {
-  color: var(--c-07);
-}
-
-.footer-informacoes a:last-child {
+.footer-informacoes li:last-child {
   margin-bottom: 0;
 }
 
@@ -53,8 +49,18 @@
 }
 
 @media (width <= 800px) {
+  .footer > img {
+    display: none;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (width <= 600px) {
   .footer {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
 }
