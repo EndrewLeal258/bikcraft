@@ -52,6 +52,21 @@
   color: var(--c-00);
 }
 
+/* Título Internas */
+
+.titulo-bg {
+  background: var(--c-11);
+}
+
+.titulo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
 @media (width <= 800px) {
   .btn {
     font-size: 1rem;
@@ -60,5 +75,15 @@
 
   .link {
     font-size: 1rem;
+  }
+
+  .titulo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo p {
+    text-transform: lowercase;
+    font-weight: 400;
   }
 }
