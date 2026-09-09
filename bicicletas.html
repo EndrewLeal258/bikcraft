@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400..900&family=Merriweather:ital,opsz,wght@1,18..144,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="bicicletas">
   <header class="header-bg">
     <div class="header container">
       <a href="./">
@@ -21,7 +21,7 @@
       </a>
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m c-00">
-          <li><a href="./bicicletas.html" class="ativo">Bicicletas</a></li>
+          <li><a href="./bicicletas.html">Bicicletas</a></li>
           <li><a href="./seguros.html">Seguros</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
@@ -37,67 +37,59 @@
       </div>
     </div>
 
-    <ul class="bicicletas">
-      <li class=" container">
-        <figure>
-          <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Elétrica Preta">
-          <figcaption class="font-2-m-b c-00">R$ 4.999,00</figcaption>
+    <div class="bicicletas container">
+      <figure class="bicicletas-imagem">
+        <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Elétrica Preta">
+        <figcaption class="font-2-m-b c-00">R$ 4.999,00</figcaption>
+      </figure>
+      <div class="bicicletas-conteudo">
+        <h2 class="font-1-xl c-11">Nimbus Stark</h2>
+        <p class="font-2-s c-08">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+        <ul class="font-1-m-b c-08">
+          <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+          <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+          <li><img src="./img/icones/velocidade.svg" alt="">50 km/h</li>
+          <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+        </ul>
+        <a href="./bicicletas/nimbus.html" class="btn seta">MAIS SOBRE</a>
+      </div>
+    </div>
+    <div class="bicicletas-bg">
+      <div class="bicicletas container">
+        <figure class="bicicletas-imagem">
+          <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Elétrica Preta">
+          <figcaption class="font-2-m-b c-00">R$ 2.499,00</figcaption>
         </figure>
-        <div>
-          <h2 class="font-1-xl c-11">Nimbus Stark</h2>
-          <p class="font-2-m-b c-08">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-          <div>
-            <ul class="font-1-m-b c-08">
-              <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-              <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
-              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
-            </ul>
-            <a href="./bicicletas.nimbus.html" class="btn">MAIS SOBRE<img src="./img/icones/seta.svg" alt=""></a>
-          </div>
+        <div class="bicicletas-conteudo">
+          <h2 class="font-1-xl c-00">Magic Might</h2>
+          <p class="font-2-s c-05">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+          <ul class="font-1-m-b c-05">
+            <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+            <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+            <li><img src="./img/icones/velocidade.svg" alt="">45 km/h</li>
+            <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+          </ul>
+          <a href="./bicicletas/magic.html" class="btn seta">MAIS SOBRE</a>
         </div>
-      </li>
-      <li>
-        <div class="container">
-          <figure>
-            <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Elétrica Preta">
-            <figcaption class="font-2-m-b c-00">R$ 2.499,00</figcaption>
-          </figure>
-          <div>
-            <h2 class="font-1-xl c-00">Magic Might</h2>
-            <p class="font-2-m-b c-05">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-            <div>
-              <ul class="font-1-m-b c-05">
-                <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-                <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-                <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
-                <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
-              </ul>
-              <a href="./bicicletas.nimbus.html" class="btn">MAIS SOBRE<img src="./img/icones/seta.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="container">
-        <figure>
-          <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta Elétrica Cinza">
-          <figcaption class="font-2-m-b c-00">R$ 3.499,00</figcaption>
-        </figure>
-        <div>
-          <h2 class="font-1-xl c-11">Nebula Cosmic</h2>
-          <p class="font-2-m-b c-08">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-          <div>
-            <ul class="font-1-m-b c-08">
-              <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-              <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
-              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
-            </ul>
-            <a href="./bicicletas.nimbus.html" class="btn">MAIS SOBRE<img src="./img/icones/seta.svg" alt=""></a>
-          </div>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
+    <div class=" bicicletas container">
+      <figure class="bicicletas-imagem">
+        <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta Elétrica Cinza">
+        <figcaption class="font-2-m-b c-00">R$ 3.499,00</figcaption>
+      </figure>
+      <div class="bicicletas-conteudo">
+        <h2 class="font-1-xl c-11">Nebula Cosmic</h2>
+        <p class="font-2-s c-08">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+        <ul class="font-1-m-b c-08">
+          <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+          <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+          <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
+          <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+        </ul>
+        <a href="./bicicletas/nebula.html" class="btn seta">MAIS SOBRE</a>
+      </div>
+    </div>
   </main>
 
   <footer class="footer-bg">
