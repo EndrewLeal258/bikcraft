@@ -1,0 +1,112 @@
+.bicicleta-bg {
+  background: var(--c-11);
+}
+
+.bicicleta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: start;
+  padding-bottom: 60px;
+}
+
+.bicicleta-galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.bicicleta-galeria img:nth-child(1) {
+  grid-column: 1/-1;
+}
+
+.bicicleta-conteudo p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-conteudo > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: start;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-conteudo > div div {
+  display: grid;
+  gap: 8px;
+}
+
+.bicicleta-conteudo span {
+  display: flex;
+  gap: 8px;
+  background: var(--c-12);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.bicicleta-conteudo span::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+}
+
+.bicicleta-conteudo span:first-child:before {
+  background: url("../../img/icones/entrega.svg") no-repeat center;
+}
+
+.bicicleta-conteudo span:last-child:before {
+  background: url("../../img/icones/estoque.svg") no-repeat center;
+}
+
+.bicicleta-informacoes > span,
+.bicicleta-ficha > span {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.bicicleta-informacoes {
+  margin-bottom: 40px;
+}
+
+.bicicleta-informacoes ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 32px;
+  background: var(--c-12);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.bicicleta-ficha ul {
+  background: var(--c-12);
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.bicicleta-ficha li {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.bicicleta-ficha li + li {
+  border-top: 1px solid var(--c-11);
+}
+
+@media (width <= 800px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-conteudo > div div {
+    gap: 4px;
+  }
+}
+
+@media (width <= 600px) {
+  .bicicleta-informacoes ul {
+    grid-template-columns: 1fr;
+  }
+}
