@@ -1,0 +1,127 @@
+#orcamento {
+  background: linear-gradient(var(--c-11) 600px, var(--c-00) 0);
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-bottom: 200px;
+}
+
+.orcamento h2,
+.orcamento-bikcraft {
+  grid-column: 1 / -1;
+}
+
+.orcamento h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.orcamento h2::before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 8px;
+  background: var(--p-01);
+}
+
+.orcamento-dados,
+.orcamento-formulario {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 60px 60px 48px;
+}
+
+.orcamento-dados {
+  background: var(--c-12);
+  border-radius: 4px 0 0 4px;
+}
+
+.orcamento-dados form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 20px;
+}
+
+.orcamento-dados label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 16px 12px;
+  background: var(--c-10);
+  border-radius: 4px;
+  padding: 16px 20px;
+  cursor: pointer;
+}
+
+.orcamento-dados label:has(input[type="radio"]:checked) {
+  background: var(--c-00);
+  color: var(--c-11);
+}
+
+.orcamento-bikcraft {
+  display: none;
+  margin-top: 40px;
+}
+
+.orcamento-dados label:has(input[id="bikcraft"]:checked) ~ .orcamento-bikcraft {
+  display: block;
+}
+
+.orcamento-bikcraft label {
+  grid-template-columns: auto auto 1fr;
+}
+
+.orcamento-bikcraft label + label {
+  margin-top: 20px;
+}
+
+.orcamento-bikcraft label span:nth-child(3) {
+  justify-self: end;
+}
+
+.orcamento-bikcraft ul {
+  display: grid;
+  gap: 8px;
+  grid-column: 2;
+}
+
+.orcamento-bikcraft ul img {
+  width: 16px;
+}
+
+.orcamento-bikcraft li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.orcamento-bikcraft span:nth-child(3),
+.orcamento-bikcraft ul,
+.orcamento-bikcraft div {
+  display: none;
+}
+
+input[type="radio"]:checked ~ span,
+input[type="radio"]:checked ~ div {
+  display: block;
+}
+
+input[type="radio"]:checked ~ ul {
+  display: grid;
+}
+
+.orcamento-formulario {
+  background: var(--c-00);
+  border-radius: 0 4px 4px 0;
+}
+
+.orcamento-formulario h2 {
+  margin-bottom: 0;
+}
+
+.orcamento-formulario div + h2 {
+  margin-top: 40px;
+}
