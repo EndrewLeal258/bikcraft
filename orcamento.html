@@ -37,146 +37,140 @@
       </div>
     </div>
 
-    <div class="orcamento container">
-      <section class="orcamento-dados" aria-label="Orçamento Dados">
-        <form action="./" class="font-1-s-b c-04">
-          <h2 class="font-1-xs-b c-05">BIKCRAFT OU SEGURO?</h2>
-          <label for="bikcraft">
-            <input type="radio" name="bikcraft-seguro" id="bikcraft" value="bikcraft">
-            <span>Bikcraft</span>
-          </label>
-          <label for="seguro">
-            <input type="radio" name="bikcraft-seguro" id="seguro" value="seguro">
-            <span>Seguro</span>
-          </label>
-          <div class="orcamento-bikcraft">
-            <h2 class="font-1-xs-b c-05">escolha a sua</h2>
-            <label for="nimbus">
-              <input type="radio" name="bikcraft" id="nimbus" value="nimbus">
-              <span>Nimbus Stark</span>
-              <span>R$ 4.999,00</span>
-              <ul class="font-1-xs c-08">
-                <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-                <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-                <li><img src="./img/icones/velocidade.svg" alt="">50 km/h</li>
-                <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
-              </ul>
-              <div>
-                <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta">
-              </div>
-            </label>
-            <label for="magic">
-              <input type="radio" name="bikcraft" id="magic" value="magic">
-              <span>Magic Might</span>
-              <span>R$ 2.499,00</span>
-              <ul class="font-1-xs c-08">
-                <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-                <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-                <li><img src="./img/icones/velocidade.svg" alt="">45 km/h</li>
-                <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
-              </ul>
-              <div>
-                <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Preta">
-              </div>
-            </label>
-            <label for="nebula">
-              <input type="radio" name="bikcraft" id="nebula" value="nebula">
-              <span>Nebula Cosmic</span>
-              <span>R$ 3.999,00</span>
-              <ul class="font-1-xs c-08">
-                <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-                <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-                <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
-                <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
-              </ul>
-              <div>
-                <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta Cinza">
-              </div>
-            </label>
+    <form class="orcamento container" action="./">
+      <div class="orcamento-produto">
+        <h2 class="font-1-xs-b c-05">BIKCRAFT OU SEGURO?</h2>
+
+        <input type="radio" name="tipo" id="bikcraft" value="bikcraft">
+        <label for="bikcraft" class="font-1-s c-04">Bikcraft</label>
+
+        <input type="radio" name="tipo" id="seguro" value="seguro">
+        <label for="seguro" class="font-1-s c-04">Seguro</label>
+
+        <div class="orcamento-conteudo" id="orcamento-bikcraft">
+          <h2 class="font-1-xs-b c-05">escolha a sua</h2>
+
+          <input type="radio" name="produto" id="nimbus" value="nimbus">
+          <label for="nimbus" class="font-1-s c-04">Nimbus Stark <span>R$ 4.999,00</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs c-08">
+              <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" alt="">50 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta">
           </div>
-        </form>
-      </section>
-      <section class="orcamento-formulario" aria-label="Orçamento Formulário">
-        <form action="./" class="form">
-          <h2 class="font-1-xs-b c-09">Dados Pessoais</h2>
-          <div>
-            <label for=" nome">Nome</label>
-            <input type="text" id="nome" name="nome">
+
+          <input type="radio" name="produto" id="magic" value="magic">
+          <label for="magic" class="font-1-s c-04">Magic Might <span>R$ 2.499,00</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs c-08">
+              <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" alt="">45 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Preta">
           </div>
-          <div>
-            <label for=" sobrenome">Sobrenome</label>
-            <input type="text" id="sobrenome" name="sobrenome">
+
+          <input type="radio" name="produto" id="nebula" value="nebula">
+          <label for="nebula" class="font-1-s c-04">Nebula Cosmic <span>R$ 3.999,00</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs c-08">
+              <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta Cinza">
           </div>
-          <div class="col-02">
-            <label for=" cpf">CPF</label>
-            <input type="number" id="cpf" name="cpf" placeholder="000.000.000-00">
-          </div>
-          <div class="col-02">
-            <label for=" email">Email</label>
-            <input type="email" id="email" name="email">
-          </div>
-          <h2 class="font-1-xs-b c-09">Entrega</h2>
-          <div>
-            <label for=" cep">CEP</label>
-            <input type="number" id="cep" name="cep">
-          </div>
-          <div>
-            <label for=" numero">Número</label>
-            <input type="number" id="numero" name="numero">
-          </div>
-          <div>
-            <label for=" logradouro">Logradouro</label>
-            <input type="text" id="logradouro" name="logradouro" placeholder="Rua, avenida...">
-          </div>
-          <div>
-            <label for=" bairro">Bairro</label>
-            <input type="text" id="bairro" name="bairro">
-          </div>
-          <div>
-            <label for=" cidade">Cidade</label>
-            <input type="text" id="cidade" name="cidade">
-          </div>
-          <div>
-            <label for=" estado">Estado</label>
-            <select name="estado" id="estado">
-              <option value="" disabled selected>Selecione</option>
-              <option value="ac">Acre (AC)</option>
-              <option value="al">Alagoas (AL)</option>
-              <option value="ap">Amapá (AP)</option>
-              <option value="am">Amazonas (AM)</option>
-              <option value="ba">Bahia (BA)</option>
-              <option value="ce">Ceará (CE)</option>
-              <option value="df">Distrito Federal (DF)</option>
-              <option value="es">Espírito Santo (ES)</option>
-              <option value="go">Goiás (GO)</option>
-              <option value="ma">Maranhão (MA)</option>
-              <option value="mt">Mato Grosso (MT)</option>
-              <option value="ms">Mato Grosso do Sul (MS)</option>
-              <option value="mg">Minas Gerais (MG)</option>
-              <option value="pa">Pará (PA)</option>
-              <option value="pb">Paraíba (PB)</option>
-              <option value="pr">Paraná (PR)</option>
-              <option value="pe">Pernambuco (PE)</option>
-              <option value="pi">Piauí (PI)</option>
-              <option value="rj">Rio de Janeiro (RJ)</option>
-              <option value="rn">Rio Grande do Norte (RN)</option>
-              <option value="rs">Rio Grande do Sul (RS)</option>
-              <option value="ro">Rondônia (RO)</option>
-              <option value="rr">Roraima (RR)</option>
-              <option value="sc">Santa Catarina (SC)</option>
-              <option value="sp">São Paulo (SP)</option>
-              <option value="se">Sergipe (SE)</option>
-              <option value="to">Tocantins (TO)</option>
-            </select>
-          </div>
-          <div class="col-02">
-            <input type="checkbox" id="termo" name="termo" class="check">
-            <label for="termo">Li e aceito os <a href="./termos.html">termos e condições</a>.</label>
-          </div>
-          <button class="btn col-02">SOLICITAR ORÇAMENTO</button>
-        </form>
-      </section>
-    </div>
+        </div>
+
+        <div class="orcamento-conteudo" id="orcamento-seguro">
+          <h2 class="font-1-xs-b c-05">escolha o plano</h2>
+
+          <input type="radio" name="produto" id="prata" value="prata">
+          <label for="prata" class="font-1-s c-04">Prata <span>R$ 199,00</span></label>
+          <input type="radio" name="produto" id="ouro" value="ouro">
+          <label for="ouro" class="font-1-s c-04">Ouro<span>R$ 299,00</span></label>
+        </div>
+      </div>
+      <div class="orcamento-dados form">
+        <h2 class="font-1-xs-b c-09 col-02">Dados Pessoais</h2>
+        <div>
+          <label for=" nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+        <div>
+          <label for=" sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome">
+        </div>
+        <div class="col-02">
+          <label for=" cpf">CPF</label>
+          <input type="number" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </div>
+        <div class="col-02">
+          <label for=" email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <h2 class="font-1-xs-b c-09 col-02">Entrega</h2>
+        <div>
+          <label for=" cep">CEP</label>
+          <input type="text" id="cep" name="cep">
+        </div>
+        <div>
+          <label for=" numero">Número</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+        <div>
+          <label for=" logradouro">Logradouro</label>
+          <input type="text" id="logradouro" name="logradouro" placeholder="Rua, avenida...">
+        </div>
+        <div>
+          <label for=" bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro">
+        </div>
+        <div>
+          <label for=" cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade">
+        </div>
+        <div>
+          <label for=" estado">Estado</label>
+          <select name="estado" id="estado">
+            <option value="" disabled selected>Selecione</option>
+            <option value="ac">Acre (AC)</option>
+            <option value="al">Alagoas (AL)</option>
+            <option value="ap">Amapá (AP)</option>
+            <option value="am">Amazonas (AM)</option>
+            <option value="ba">Bahia (BA)</option>
+            <option value="ce">Ceará (CE)</option>
+            <option value="df">Distrito Federal (DF)</option>
+            <option value="es">Espírito Santo (ES)</option>
+            <option value="go">Goiás (GO)</option>
+            <option value="ma">Maranhão (MA)</option>
+            <option value="mt">Mato Grosso (MT)</option>
+            <option value="ms">Mato Grosso do Sul (MS)</option>
+            <option value="mg">Minas Gerais (MG)</option>
+            <option value="pa">Pará (PA)</option>
+            <option value="pb">Paraíba (PB)</option>
+            <option value="pr">Paraná (PR)</option>
+            <option value="pe">Pernambuco (PE)</option>
+            <option value="pi">Piauí (PI)</option>
+            <option value="rj">Rio de Janeiro (RJ)</option>
+            <option value="rn">Rio Grande do Norte (RN)</option>
+            <option value="rs">Rio Grande do Sul (RS)</option>
+            <option value="ro">Rondônia (RO)</option>
+            <option value="rr">Roraima (RR)</option>
+            <option value="sc">Santa Catarina (SC)</option>
+            <option value="sp">São Paulo (SP)</option>
+            <option value="se">Sergipe (SE)</option>
+            <option value="to">Tocantins (TO)</option>
+          </select>
+        </div>
+        <button class="btn col-02">SOLICITAR ORÇAMENTO</button>
+      </div>
+    </form>
   </main>
   <footer class="footer-bg">
     <div class="footer container">
