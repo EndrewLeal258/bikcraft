@@ -47,7 +47,8 @@
   grid-column: initial;
 }
 
-.orcamento-produto input {
+.orcamento-produto input,
+.orcamento-dados input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
@@ -152,6 +153,56 @@
   border-radius: 0 4px 4px 0;
 }
 
+.check label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 4px;
+}
+
+.check label::before {
+  display: inline-block;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: var(--c-01);
+  border: 1px solid var(--c-04);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.check label::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 45%;
+  width: 10px;
+  height: 20px;
+  border: solid var(--p-02);
+  border-width: 0 4px 4px 0;
+  transform: translateY(-60%) rotate(45deg);
+  display: none;
+}
+
+.check input[type="checkbox"]:checked + label::before {
+  border-color: var(--p-01);
+  background: var(--c-00);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.check input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+
+.check label a {
+  text-decoration: underline;
+}
+
+.check label a:hover {
+  color: var(--c-08);
+}
+
 @media (width <= 1200px) {
   .orcamento-produto,
   .orcamento-dados {
@@ -170,6 +221,23 @@
 
   .orcamento-dados {
     border-radius: 0 0 4px 4px;
+  }
+}
+
+@media (width <= 600px) {
+  .check label {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+
+  .check label::before {
+    margin-bottom: 12px;
+  }
+
+  .check label::after {
+    left: 10px;
+    top: 18%;
   }
 }
 
