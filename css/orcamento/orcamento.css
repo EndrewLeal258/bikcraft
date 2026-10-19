@@ -35,7 +35,8 @@
   grid-template-columns: repeat(2, 1fr);
   align-content: start;
   gap: 20px;
-  background: var(--c-12);
+  background: var(--c-12) url("../../img/dec/bottom-left.svg") no-repeat bottom
+    20px left 20px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -149,7 +150,8 @@
 }
 
 .orcamento-dados {
-  background: var(--c-00);
+  background: var(--c-00) url("../../img/dec/bottom-right.svg") no-repeat bottom
+    20px right 20px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -221,6 +223,7 @@
 
   .orcamento-dados {
     border-radius: 0 0 4px 4px;
+    background: var(--c-12);
   }
 }
 

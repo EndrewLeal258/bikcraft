@@ -2,6 +2,10 @@
   background: linear-gradient(var(--c-11) 600px, var(--c-01) 0px);
 }
 
+#contato .header-menu li:nth-child(3) a::after {
+  width: 100%;
+}
+
 .contato {
   display: grid;
   grid-template-columns: 5fr 7fr;
@@ -14,7 +18,8 @@
 }
 
 .contato-dados {
-  background: var(--c-12);
+  background: var(--c-12) url("../../img/dec/bottom-left.svg") no-repeat bottom
+    20px left 20px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -64,8 +69,9 @@
 }
 
 .contato-formulario {
-  background: var(--c-00);
   border-radius: 0 4px 4px 0;
+  background: var(--c-00) url("../../img/dec/bottom-right.svg") no-repeat bottom
+    20px right 20px;
 }
 
 @media (width <= 800px) {
@@ -80,6 +86,7 @@
 
   .contato-dados {
     border-radius: 4px 4px 0 0;
+    background: var(--c-12);
   }
 
   .contato-dados h2,
